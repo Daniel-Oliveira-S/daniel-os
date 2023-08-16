@@ -15,7 +15,7 @@ import food from './assets/food.jpg'
 import music from './assets/music.jpg'
 import entertainment from './assets/cinema.jpg'
 
-import {GithubLogo, LinkedinLogo, InstagramLogo} from '@phosphor-icons/react'
+import {GithubLogo, LinkedinLogo, InstagramLogo, WhatsappLogo} from '@phosphor-icons/react'
 
 
 export default function Home() {
@@ -32,7 +32,17 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <section className={styles.about} id="about">
-          <p>Bem-vindo(a) ao universo tecnológico de um desenvolvedor apaixonado pela programação e pelas infinitas possibilidades que a tecnologia oferece. Aqui, você conhecerá mais sobre mim e minha jornada como um desenvolvedor criativo em busca de soluções inovadoras.
+          <p>Bem-vindo(a) ao universo tecnológico de um desenvolvedor apaixonado pela programação
+            <br />
+            e pelas infinitas
+            possibilidades que a tecnologia oferece.
+            <br />
+            Aqui, você conhecerá mais sobre mim
+            <br />
+            e minha jornada como um desenvolvedor
+            <br />
+            criativo em busca de
+            soluções inovadoras.
             <br />
             <br />
           Meu nome é Daniel, sou um desenvolvedor dedicado com 2 anos de experiência. Minha paixão por resolver problemas complexos e transformar ideias em código é o motor que impulsiona minha carreira.
@@ -139,6 +149,9 @@ export default function Home() {
           <div id="whatsapp" className={styles.whatsapp}>
             <h2>OU</h2>
               
+            <a href="" className={styles.btn}>
+              <WhatsappLogo size={30} className={styles.icon} />
+            </a>
 
 
           </div>

@@ -84,7 +84,7 @@ margin-top: 14rem;
       font-weight: 400;
       color: #030b27;
       letter-spacing: 0.05rem;
-      width: 25%;
+      width: max-content;
       margin-left: 10%;
       word-spacing: 0.1rem;
     }
@@ -346,10 +346,48 @@ margin-top: 14rem;
         color: #fff;
       }
     }
+             
+
+   
+   
+  }
+  .btn {
+    background-image: linear-gradient(to right, #29d113 0%, #448326  51%, #13200e  100%);
+    margin: 100px;
+    padding: 1rem 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #000;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+  
   }
 
 }
 }
 
+@media screen and (max-width:768px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+      width: 100%;
+      margin-top: 2rem;
+    }
+    .image{
+      margin: 0 auto;
+    }
+  }
+}
 
 
