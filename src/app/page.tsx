@@ -16,36 +16,57 @@ import music from './assets/music.jpg'
 import entertainment from './assets/cinema.jpg'
 
 import {GithubLogo, LinkedinLogo, InstagramLogo, WhatsappLogo} from '@phosphor-icons/react'
+import React from 'react'
 
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = React.useState(false)
+  
+  const toggleMenu = () => { 
+    setMenuOpen(!menuOpen)
+  }
+
+
   return (
     <>
       <header className={styles.header}>
         <h2 className={styles.title}>Daniel Souza</h2>
+        <nav className={styles.menuOpen ? 'menu-open' : ""}>
         <ul className={styles.ul}>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#services">Atendimento</a></li>
           <li><a href="#social">Redes Sociais</a></li>
           <li><a className={styles.contact} href="#contact">Contato</a></li>
-        </ul>
+          </ul>
+        </nav>
+        
+        <button className={styles.menuToggle} onClick={toggleMenu}>
+          <span ></span>
+          <span></span>
+          <span></span>
+        </button>
       </header>
       <main className={styles.main}>
         <section className={styles.about} id="about">
-          <p>Bem-vindo(a) ao universo tecnológico de um desenvolvedor apaixonado pela programação
+          <p>Bem-vindo(a) ao universo tecnológico de um desenvolvedor apaixonado
             <br />
+            pela programação
             e pelas infinitas
             possibilidades que a tecnologia oferece.
             <br />
             Aqui, você conhecerá mais sobre mim
-            <br />
+            
             e minha jornada como um desenvolvedor
-            <br />
+                        <br />
             criativo em busca de
             soluções inovadoras.
             <br />
             <br />
-          Meu nome é Daniel, sou um desenvolvedor dedicado com 2 anos de experiência. Minha paixão por resolver problemas complexos e transformar ideias em código é o motor que impulsiona minha carreira.
+            Meu nome é Daniel, sou um desenvolvedor dedicado com 2 anos de experiência.
+            <br />
+            Minha paixão por resolver problemas complexos e transformar ideias em código
+            <br />
+            é o motor que impulsiona minha carreira.
           </p>
           <Image src={profile} className={styles.image} alt="Daniel Souza" width={200} height={200} />
         </section>
@@ -149,7 +170,8 @@ export default function Home() {
           <div id="whatsapp" className={styles.whatsapp}>
             <h2>OU</h2>
               
-            <a href="" className={styles.btn}>
+            <a href="https://wa.me/5511977335699?text=Ol%C3%A1.+Tenho+interesse+em+fazer+um+site+para+o+meu+neg%C3%B3cio."
+            target='_blank'  className={styles.btn}>
               <WhatsappLogo size={30} className={styles.icon} />
             </a>
 
