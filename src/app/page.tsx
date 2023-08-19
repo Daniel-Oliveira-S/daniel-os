@@ -160,10 +160,10 @@ export default function Home() {
 
         <section className={styles.contact} id='contact'>
           <h2>CONTATO:</h2>
-          <form action="">
-            <input type="text" placeholder='Nome' />
-            <input type="email" placeholder='Email' />
-            <textarea name="" id=""  placeholder='Mensagem'></textarea>
+          <form action="https://formsubmit.io/send/daniosouza1@gmail.com" method="POST">
+            <input type="text" placeholder='Nome' name='Nome' />
+            <input type="email" placeholder='Email' name='email' />
+            <textarea name="Mensagem" id="Msg"  placeholder='Mensagem' ></textarea>
             <button type='submit'>Enviar</button>
           </form>
 
