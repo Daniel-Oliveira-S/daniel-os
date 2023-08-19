@@ -412,6 +412,8 @@ margin-top: 14rem;
   }
 
 
+
+
 .main{
 width: 100%;
 display: flex;
@@ -422,10 +424,11 @@ justify-content: center;
 align-items: center;
 p{
   margin-left: 0;
-
+font-size: 1.125rem;
   margin-bottom: 3rem;
   width:100%;
   text-align: center;
+  padding: 1rem;
 
 }
 .image{
@@ -460,6 +463,20 @@ p{
   }
 
  
+}
+
+.services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem
+  }
 }
 
 .works{
