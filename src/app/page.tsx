@@ -163,7 +163,9 @@ export default function Home() {
           <form action="https://formsubmit.io/send/daniosouza1@gmail.com" method="POST">
             <input type="text" placeholder='Nome' name='Nome' />
             <input type="email" placeholder='Email' name='email' />
-            <textarea name="Mensagem" id="Msg"  placeholder='Mensagem' ></textarea>
+            <textarea name="Mensagem" id="Msg" placeholder='Mensagem' ></textarea>
+            <input name="_redirect" type="hidden" id="name" value="https://www.instagram.com/eudannielsz"/>
+
             <button type='submit'>Enviar</button>
           </form>
 
