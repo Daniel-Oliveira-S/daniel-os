@@ -164,7 +164,7 @@ export default function Home() {
             <input type="text" placeholder='Nome' name='Nome' />
             <input type="email" placeholder='Email' name='email' />
             <textarea name="Mensagem" id="Msg" placeholder='Mensagem' ></textarea>
-            <input name="_redirect" type="hidden" id="name" value="https://www.instagram.com/eudannielsz" />
+            <input name="_redirect" type="hidden" id="name" value="https://danielsouza.shop" />
             <input name="_formsubmit_id" type="text" className={styles.hidden} />
 
             <button type='submit'>Enviar</button>
